@@ -1,0 +1,123 @@
+<aside class="right-side">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h4>Create Exam</h4>
+  </section>
+  <!-- Main content -->
+  <section class="content">
+
+    <div class="row">
+      <!-- left column -->
+      <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="box box-primary">
+          <form action="http://oes.elantsys.com/admin/exams/create" method="post" accept-charset="utf-8" novalidate="novalidate">
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="form-group col-xs-12">
+                    <label>Category</label>
+                    <select class="form-control required" name="category_id">
+                <option value="">Select</option>
+                                          <option value="75">Cat 1</option>
+                                          <option value="73">JAVA</option>
+                                        
+              </select>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Name</label>
+                    <input type="text" class="form-control required" name="name" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Description</label>
+                    <textarea class="form-control editor required" rows="10" name="description" style="display: none;"></textarea>
+                    <input
+                      type="hidden" name="_wysihtml5_mode" value="1">
+                      <iframe class="wysihtml5-sandbox" security="restricted" allowtransparency="true" frameborder="0" width="0"
+                        height="0" marginwidth="0" marginheight="0" style="background-color: rgb(255, 255, 255); border-collapse: separate; border-color: rgb(204, 204, 204); border-style: solid; border-width: 1px; clear: none; display: block; float: none; margin: 0px; outline: rgb(85, 85, 85) none 0px; outline-offset: 0px; padding: 6px 12px; position: static; z-index: auto; vertical-align: middle; text-align: start; box-shadow: none; border-radius: 0px; width: 494.5px; height: 214px; top: auto; left: auto; right: auto; bottom: auto;"></iframe>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Available From</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control required datemask" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="" name="available_from"
+                        value="">
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+
+
+                </div>
+                <div class="col-xs-6">
+
+                  <div class="form-group col-xs-12">
+                    <label>Available To</label>
+                    <div class="input-group">
+                      <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                      </div>
+                      <input type="text" class="form-control required datemask" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="" name="available_to"
+                        value="">
+                    </div>
+                    <!-- /.input group -->
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Duration  (mins)</label>
+                    <input type="text" class="form-control required number" name="duration" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Number of questions</label>
+                    <input type="text" class="form-control required digits" name="questions" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Pass Mark (%) </label>
+                    <input type="text" class="form-control required digits" maxlength="3" name="pass_mark" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Type</label>
+                    <select class="form-control required" name="type">
+                <option value="">Select</option>
+                <option value="free">Free</option>
+                <option value="paid">Paid</option>
+              </select>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Cost</label>
+                    <input type="text" class="form-control required digits" name="cost" value="0">
+                  </div>
+
+                  <div class="form-group col-xs-12">
+                    <label>Status</label>
+
+                    <div class="radio">
+                      <label>
+                        <div class="iradio_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="radio" name="active" id="yes" value="1" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                         <small class="badge bg-green">Active</small>
+                    </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                          <div class="iradio_minimal" aria-checked="false" aria-disabled="false" style="position: relative;"><input type="radio" name="active" id="no" value="0" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                          <small class="badge bg-red">Inactive</small>
+                      </label>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="box-footer clearfix">
+              <div class="form-group col-xs-12">
+                <button type="submit" class="btn btn-primary  pull-right">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.content -->
+</aside>

@@ -1,0 +1,25 @@
+/* Footer */
+#footerwrap {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #1f2329;
+    color:#fff;
+  }
+  
+  #footerwrap p  {
+    color: #bfc9d3;
+  }
+  
+  #footerwrap h4 {
+    color: white;
+  }
+  
+  #footerwrap i {
+    font-size: 30px;
+    color: #ffffff;
+    padding-right: 25px;
+  }
+  
+  #footerwrap i:hover {
+    color: #00b3fe
+  }
