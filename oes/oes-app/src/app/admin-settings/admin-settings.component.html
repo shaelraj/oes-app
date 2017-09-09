@@ -1,0 +1,160 @@
+<aside class="right-side">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h4>Settings</h4>
+  </section>
+  <!-- Main content -->
+  <section class="content">
+
+    <div class="row">
+      <!-- left column -->
+      <div class="col-md-12">
+        <!-- general form elements -->
+        <div class="box box-primary">
+          <!-- form start -->
+
+          <form role="form" method="POST" action="http://oes.elantsys.com/admin/settings/update" enctype="multipart/form-data" novalidate="novalidate">
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="form-group col-xs-12">
+                    <label>Site Title</label>
+                    <input type="text" class="form-control" name="site_title" value="OES">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Description</label>
+                    <textarea class="form-control editor" name="description" style="display: none;"></textarea><input type="hidden"
+                      name="_wysihtml5_mode" value="1">
+                    <iframe class="wysihtml5-sandbox" security="restricted" allowtransparency="true" frameborder="0" width="0" height="0" marginwidth="0"
+                      marginheight="0" style="background-color: rgb(255, 255, 255); border-collapse: separate; border-color: rgb(204, 204, 204); border-style: solid; border-width: 1px; clear: none; display: block; float: none; margin: 0px; outline: rgb(85, 85, 85) none 0px; outline-offset: 0px; padding: 6px 12px; position: static; top: auto; left: auto; right: auto; bottom: auto; z-index: auto; vertical-align: middle; text-align: start; box-shadow: none; border-radius: 0px; width: 494.5px; height: 54px;"></iframe>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Keywords (comma separated) </label>
+                    <input type="text" class="form-control" name="keywords" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Address</label>
+                    <input type="text" class="form-control" name="address" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>city</label>
+                    <input type="text" class="form-control" name="city" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>email</label>
+                    <input type="text" class="form-control" name="email" value="info@oes.com">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>phone</label>
+                    <input type="text" class="form-control" name="phone" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>About Us Page Content</label>
+                    <textarea class="form-control editor" rows="10" name="aboutus_content" style="display: none;"></textarea>
+                    <input type="hidden" name="_wysihtml5_mode" value="1">
+                    <iframe class="wysihtml5-sandbox" security="restricted" allowtransparency="true" frameborder="0" width="0" height="0" marginwidth="0"
+                      marginheight="0" style="background-color: rgb(255, 255, 255); border-collapse: separate; border-color: rgb(204, 204, 204); border-style: solid; border-width: 1px; clear: none; display: block; float: none; margin: 0px; outline: rgb(85, 85, 85) none 0px; outline-offset: 0px; padding: 6px 12px; position: static; top: auto; left: auto; right: auto; bottom: auto; z-index: auto; vertical-align: middle; text-align: start; box-shadow: none; border-radius: 0px; width: 494.5px; height: 214px;"></iframe>
+                  </div>
+
+                  <div class="form-group col-xs-12">
+                    <label>Date Format</label>
+                    <select name="date_format" class="form-control">
+<option value="d/m/Y" selected="selected">09/09/2017</option>
+<option value="m/d/Y">09/09/2017</option>
+<option value="Y/m/d">2017/09/09</option>
+<option value="F j, Y">September 9, 2017</option>
+<option value="m.d.y">09.09.2017</option>
+<option value="d-m-Y">09-09-2017</option>
+<option value="D M j Y">Sat Sep 9 2017</option>
+</select> </div>
+                  <div class="form-group col-xs-12">
+                    <label>Currency</label>
+                    <input type="text" class="form-control" name="currency" value="$">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Site Logo</label>
+                    <div style="clear:both"></div>
+                    <img alt="logo" class="col-xs-4" title="logo">
+                    <div style="clear:both"></div> <br>
+                    <input type="file" class="form-control" name="logo">
+                  </div>
+
+                  <div class="form-group col-xs-12">
+                    <label>Facebook Url</label>
+                    <input type="text" class="form-control" name="facebook_url" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Twitter Url</label>
+                    <input type="text" class="form-control" name="twitter_url" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Instagram Url</label>
+                    <input type="text" class="form-control" name="instagram_url" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Tumblr Url</label>
+                    <input type="text" class="form-control" name="tumblr_url" value="">
+                  </div>
+
+
+                </div>
+                <div class="col-xs-6">
+
+                  <div class="form-group col-xs-12">
+                    <h4><b>Certificate Settings</b></h4>
+                    <hr>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Certificate Logo</label>
+                    <div style="clear:both"></div>
+                    <img alt="logo" class="col-xs-4" title="logo">
+                    <div style="clear:both"></div> <br>
+                    <input type="file" class="form-control" name="certificate_logo">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Cerificate signature Text </label>
+                    <textarea class="form-control" rows="10" name="certificate_signature_text"></textarea>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Certificate Signature</label>
+                    <div style="clear:both"></div>
+                    <div style="clear:both"></div> <br>
+                    <input type="file" class="form-control" name="certificate_signature">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <hr>
+                    <h4><b>Paypal Settings</b></h4>
+                    <hr>
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Paypal Email</label>
+                    <input type="text" class="form-control" name="paypal" value="">
+                  </div>
+                  <div class="form-group col-xs-12">
+                    <label>Paypal Mode</label>
+                    <select class="form-control" name="paypal_mode">
+                      <option value="production">Production</option>
+                      <option value="sandbox" selected="">Sandbox</option>
+                  </select>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <!-- /.box-body -->
+
+            <div class="box-footer clearfix">
+              <button type="submit" class="btn btn-primary pull-right">Submit</button>
+            </div>
+          </form>
+        </div>
+        <!-- /.box -->
+
+      </div>
+      <!--/.col (left) -->
+
+    </div>
+  </section>
+  <!-- /.content -->
+</aside>

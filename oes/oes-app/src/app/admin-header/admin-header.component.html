@@ -5,7 +5,7 @@
         <div class="menu-list">
   
             <ul id="menu-content" class="menu-content collapse out">
-                <li routerLink="/admin/dashboard" routerLinkActive="active" class="active">
+                <li routerLink="/admin/dashboard" routerLinkActive="active" >
                   <a >
                   <i class="fa fa-dashboard fa-lg"></i> Dashboard
                   </a>
@@ -30,14 +30,14 @@
 
 
                 <li data-toggle="collapse" data-target="#users" class="collapsed">
-                  <a href="#"><i class="fa fa-users fa-lg"></i> Users <span class="arrow"></span></a>
+                  <a><i class="fa fa-users fa-lg"></i> Users <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="users">
-                  <li>Add User</li>
-                  <li>View User</li>
+                  <li><a routerLink="/admin/addUser" routerLinkActive="active" >Add User</a></li>
+                  <li><a routerLink="/admin/viewUsers" routerLinkActive="active" >View User</a></li>
                 </ul>
 
-                <li data-toggle="collapse" data-target="#subscription" class="collapsed">
+             <!--   <li data-toggle="collapse" data-target="#subscription" class="collapsed">
                   <a href="#"><i class="fa fa-edit fa-lg"></i> Subscription <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="subscription">
@@ -50,16 +50,16 @@
                   <a href="#">
                   <i class="fa fa-usd fa-lg"></i> Payment History
                   </a>
-                  </li>
+                  </li> -->
 
-                 <li>
-                  <a href="#">
+                 <li routerLinkActive="active">
+                  <a routerLink="/admin/settings" >
                   <i class="fa fa-cog fa-lg"></i> Settings
                   </a>
                 </li>
 
-                <li>
-                  <a href="#">
+                <li routerLinkActive="active">
+                  <a routerLink="/admin/editProfile" >
                   <i class="fa fa-user fa-lg"></i> My Profile
                   </a>
                 </li>
